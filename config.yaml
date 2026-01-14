@@ -1,0 +1,24 @@
+input: "images/input1.png"
+output: "results/"           # file path or directory (directory ends with / recommended)
+
+side_pixels: 300
+margin_size: 25
+
+aruco_dict: "DICT_4X4_50"
+
+palette_rgb:
+  - [0, 0, 255]       # primary: black, secondary: black
+  - [97, 0, 0]        # primary: black, secondary: white
+  - [157, 255, 255]   # primary: white, secondary: black
+  - [255, 255, 0]     # primary: white, secondary: white
+
+remap:
+  # KMeans parameters
+  n_clusters: 4
+  n_blacks: 2
+  attempts: 5
+  eps: 1.0
+  max_iter: 300
+  # Morphological operations after separating primary-black and primary-white
+  iter_dilate: 0  # for primary-black
+  iter_erode: 0   # for primary-white
