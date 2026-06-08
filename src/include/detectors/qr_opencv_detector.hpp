@@ -18,7 +18,6 @@ namespace detectors
 
         cv::QRCodeDetector qrd;
 
-        // detectAndDecodeMulti を優先（なければ single）
         std::vector<std::string> decoded;
         std::vector<std::vector<cv::Point2f>> points;
         std::vector<cv::Mat> straight;

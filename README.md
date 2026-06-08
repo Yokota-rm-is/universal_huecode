@@ -1,7 +1,7 @@
 # Universal HueCode 
 
 ## Status
-- Marker detection: `src/` will be made public after the paper is accepted
+- Marker detection: available
 - Marker generation: in progress
 
 ## 1) Install dependencies (Ubuntu 22.04)
